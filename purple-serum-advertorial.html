@@ -607,41 +607,95 @@
         margin-bottom: 0;
       }
 
-      .formula-compare {
-        width: 100%;
-        border-collapse: collapse;
+      .formula-bridge {
         margin-top: 22px;
-        background: #fff;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-
-      .formula-compare th,
-      .formula-compare td {
+        padding: 28px 24px;
         border: 1px solid var(--line);
-        padding: 14px 12px;
-        text-align: left;
-        vertical-align: middle;
+        background: #fff;
+        text-align: center;
       }
 
-      .formula-compare th {
-        font-size: 12px;
-        letter-spacing: 0.08em;
+      .formula-bridge-visual {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.1em;
         text-transform: uppercase;
-        background: #f7f5ef;
-      }
-
-      .formula-compare .perfora-col,
-      .formula-compare th.perfora-col {
-        background: #f4eefc;
-      }
-
-      .formula-compare .check {
         color: var(--lavender-deep);
+        line-height: 1.9;
+        margin-bottom: 14px;
+      }
+
+      .formula-bridge-title {
+        margin: 0 0 14px;
+        font-size: clamp(2rem, 4vw, 3rem);
+        line-height: 0.98;
+        letter-spacing: -0.04em;
+      }
+
+      .formula-ingredient-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 12px;
+      }
+
+      .formula-chip {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 14px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: #faf7ff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      .formula-plus,
+      .formula-arrow {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        color: var(--lavender-deep);
+      }
+
+      .formula-arrow {
+        margin: 6px 0 12px;
+      }
+
+      .formula-bridge-copy {
+        max-width: 520px;
+        margin: 0 auto 16px;
+        font-size: 0.98rem;
+      }
+
+      .formula-outcomes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      .formula-outcome {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 14px;
+        border-radius: 999px;
+        background: #f4eefc;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
         font-weight: 700;
       }
 
-      .formula-compare .dash {
-        color: #999;
+      .formula-outcome .check {
+        color: var(--lavender-deep);
       }
 
       .review {
@@ -787,9 +841,7 @@
         }
 
         .comparison th,
-        .comparison td,
-        .formula-compare th,
-        .formula-compare td {
+        .comparison td {
           min-width: 150px;
         }
 
@@ -824,6 +876,20 @@
         .step,
         .review {
           padding: 16px;
+        }
+
+        .formula-bridge {
+          padding: 22px 16px;
+        }
+
+        .formula-bridge-title {
+          font-size: 2rem;
+        }
+
+        .formula-chip,
+        .formula-outcome {
+          width: 100%;
+          justify-content: center;
         }
 
         .mobile-atc {
@@ -959,7 +1025,6 @@
               <p>
                 Enamel is slightly translucent, so warmer dentin can show through. Add tea, coffee, smoking, dark sauces, and bright lighting, and teeth can start looking more yellow than expected even with regular brushing.
               </p>
-
             </div>
 
             <figure class="inline-media split-media">
@@ -1003,13 +1068,16 @@
             <p class="dek" style="max-width: 760px; margin-top: 0;">
               Purple Serum doesn't rely on colour correction alone. Every ingredient has a specific job.
             </p>
+            <p style="font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: var(--muted); margin-bottom: 0;">
+              Scan each card for what it does, why it helps, and why that matters in real life.
+            </p>
 
             <div class="ingredient-grid">
               <article class="ingredient-card">
                 <div class="ingredient-icon">◐</div>
                 <h3>Purple Colour Correctors</h3>
                 <p>
-                  These are the pigments that visually cancel yellow tones fast. They are included for the instant brightening effect you notice right away. That matters because you get a quick confidence boost, instead of waiting. On their own, though, pigments only correct appearance, not the buildup behind dull-looking teeth.
+                  Instantly neutralise yellow tones. You notice a brighter-looking smile fast, especially before photos or meetings. Why this matters: perfect when you want a quick cosmetic improvement, not a long waiting period.
                 </p>
               </article>
 
@@ -1017,7 +1085,7 @@
                 <div class="ingredient-icon">P</div>
                 <h3>Papain</h3>
                 <p>
-                  Papain is a natural enzyme from papaya. It is included to help break down stain-causing proteins sitting on teeth. That matters because your smile can look cleaner over time, not just more corrected in the moment. It adds stain support that purple pigments alone cannot provide.
+                  Natural papaya enzyme. Helps loosen stain-causing proteins sitting on teeth. Why this matters: supports cleaner-looking teeth beyond colour correction, so the formula does more than simply mask yellow tones.
                 </p>
               </article>
 
@@ -1025,7 +1093,7 @@
                 <div class="ingredient-icon">B</div>
                 <h3>Bromelain</h3>
                 <p>
-                  Bromelain is a natural enzyme from pineapple. It is included to support a cleaner-looking tooth surface by helping loosen the things that make teeth look dull. That matters because the result feels more complete. It supports the formula beyond simple colour balancing alone.
+                  Natural pineapple enzyme. Supports a cleaner-looking tooth surface by helping break down the buildup that makes teeth look dull. Why this matters: the brightening effect feels more complete, not only surface-deep.
                 </p>
               </article>
 
@@ -1033,13 +1101,29 @@
                 <div class="ingredient-icon">N</div>
                 <h3>Nano Hydroxyapatite</h3>
                 <p>
-                  This is a mineral already associated with enamel. It is included to support remineralisation and help reduce sensitivity. That matters because a brighter-looking routine should still feel gentle. It gives the formula an enamel-support angle that purple pigments alone do not cover.
+                  Enamel-supporting mineral. Helps support remineralisation and reduce sensitivity. Why this matters: the routine stays gentler and more comfortable, instead of relying only on purple pigments for the visible effect.
                 </p>
               </article>
             </div>
 
-            <div class="cta-band">
-              <a class="cta-link" href="#product">See Purple Serum In Action</a>
+            <div class="formula-bridge">
+              <div class="formula-ingredient-row">
+                <span class="formula-chip">Purple Pigments</span>
+                <span class="formula-plus">+</span>
+                <span class="formula-chip">Papain</span>
+                <span class="formula-plus">+</span>
+                <span class="formula-chip">Bromelain</span>
+                <span class="formula-plus">+</span>
+                <span class="formula-chip">Nano Hydroxyapatite</span>
+              </div>
+              <div class="formula-arrow">↓</div>
+              <h3 class="formula-bridge-title">One Complete Formula</h3>
+              <p class="formula-bridge-copy">Built to brighten fast, support cleaner-looking teeth, and stay gentle enough for repeat use.</p>
+              <div class="formula-outcomes">
+                <span class="formula-outcome"><span class="check">✓</span>Instant cosmetic brightening</span>
+                <span class="formula-outcome"><span class="check">✓</span>Surface stain support</span>
+                <span class="formula-outcome"><span class="check">✓</span>Enamel-friendly care</span>
+              </div>
             </div>
           </section>
 
@@ -1143,70 +1227,16 @@
             </div>
           </section>
 
-          <section>
-            <div class="section-number">06. Formula comparison</div>
-            <h2>More Than Just A Purple Serum</h2>
-            <p class="dek" style="max-width: 760px; margin-top: 0;">
-              Colour correction is only one part of the formula.
-            </p>
-
-            <table class="formula-compare" aria-label="Generic purple products versus Perfora Purple Serum">
-              <thead>
-                <tr>
-                  <th>Formula Feature</th>
-                  <th>Generic Purple Products</th>
-                  <th class="perfora-col">Perfora Purple Serum</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Colour Correctors</td>
-                  <td class="check">✓</td>
-                  <td class="check perfora-col">✓</td>
-                </tr>
-                <tr>
-                  <td>Papain</td>
-                  <td class="dash">—</td>
-                  <td class="check perfora-col">✓</td>
-                </tr>
-                <tr>
-                  <td>Bromelain</td>
-                  <td class="dash">—</td>
-                  <td class="check perfora-col">✓</td>
-                </tr>
-                <tr>
-                  <td>Nano Hydroxyapatite</td>
-                  <td class="dash">—</td>
-                  <td class="check perfora-col">✓</td>
-                </tr>
-                <tr>
-                  <td>Gentle Formula</td>
-                  <td class="dash">Varies</td>
-                  <td class="check perfora-col">✓</td>
-                </tr>
-                <tr>
-                  <td>Instant Cosmetic Effect</td>
-                  <td class="check">✓</td>
-                  <td class="check perfora-col">✓</td>
-                </tr>
-                <tr>
-                  <td>Fresh Apple Peach Mint</td>
-                  <td class="dash">—</td>
-                  <td class="check perfora-col">✓</td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-
           <section id="product" class="split-section media-left">
             <div class="split-copy">
-              <div class="section-number">07. The product reveal</div>
+              <div class="section-number">06. The product reveal</div>
               <h2>Meet the serum designed for the moment your smile needs a fast refresh</h2>
-              <p>
-                Perfora Purple Magic Whitening Serum is positioned as a peroxide-free, enamel-safe formula for daily use. The product page says it can visibly improve the look of teeth from the first use and uses an apple, peach, and mint flavour profile.
-              </p>
-              <a class="inline-atc" href="https://perforacare.com/products/purple-magic-whitening-serum">Shop Purple Serum</a>
-
+              <ul class="faq-list" style="margin: 0 0 20px; font-family: Arial, Helvetica, sans-serif;">
+                <li>Instant cosmetic brightening</li>
+                <li>Peroxide-free and enamel-safe</li>
+                <li>Powered by colour correction plus stain-supporting ingredients</li>
+              </ul>
+              <a class="inline-atc" href="https://perforacare.com/products/purple-magic-whitening-serum">Try Purple Serum</a>
             </div>
 
             <figure class="inline-media split-media">
@@ -1221,75 +1251,26 @@
             </figure>
           </section>
 
-          <div class="cta-band">
-            <p><strong>Need a quick smile brightener, not a whole treatment plan?</strong></p>
-            <p>
-              That is the most natural point in the article to recommend Purple Serum.
-            </p>
-            <a class="cta-link" href="#final-cta">Try Purple Serum</a>
-          </div>
-
-          <section>
-            <div class="section-number">10. Social proof</div>
-            <h2>What stands out on the product page</h2>
-            <p>
-              The Perfora listing shows 6,094 reviews, with repeated mentions of fast visible improvement, confidence, and ease before important moments.
-            </p>
-
-            <figure class="before-after">
-              <img
-                src="assets/creatives/brand/web-05.png"
-                alt="Perfora before, applied, and after colour-correction results graphic"
-                style="display: block; width: 100%; height: auto;"
-              />
-              <figcaption class="caption">
-                Keep result proof honest and brand-approved. Avoid exaggerated whitening or over-edited smile imagery.
-              </figcaption>
-            </figure>
-
-            <div class="review-grid">
-              <div class="review">
-                <span class="review-name">Aarav</span>
-                <div class="review-rating">★★★★★</div>
-                <p>I have already seen improvements in my teeth. They are looking bright and white.</p>
-              </div>
-              <div class="review">
-                <span class="review-name">Riya</span>
-                <div class="review-rating">★★★★★</div>
-                <p>It gives you best result after one use only.</p>
-              </div>
-              <div class="review">
-                <span class="review-name">Neha</span>
-                <div class="review-rating">★★★★★</div>
-                <p>My teeth were becoming yellow but slightly changed to white after using purple magic teeth whitening serum for 10 days.</p>
-              </div>
-            </div>
-          </section>
-
           <section id="faq">
-            <div class="section-number">11. Frequently asked questions</div>
+            <div class="section-number">07. Frequently asked questions</div>
             <h2>What people usually want to know before trying it</h2>
             <ul class="faq-list">
               <li><strong>How fast does it work?</strong> The product page says visible results can appear from the first use, in about 60 seconds.</li>
+              <li><strong>Is it safe for everyday use?</strong> The brand describes it as peroxide free, enamel safe, and free from harmful ingredients.</li>
               <li><strong>Is it a replacement for toothpaste?</strong> No. Perfora says it should be used in addition to regular brushing, not instead of it.</li>
-              <li><strong>Is it harsh?</strong> The brand describes it as peroxide free, enamel safe, and free from harmful ingredients.</li>
-              <li><strong>How much should be used?</strong> The product page recommends two pumps on the toothbrush.</li>
             </ul>
           </section>
 
           <section id="final-cta">
-            <div class="section-number">12. Final recommendation</div>
+            <div class="section-number">08. Final recommendation</div>
             <h2>If your issue is “my teeth look yellow right now,” this is the angle that makes sense</h2>
             <p>
-              Not everyone needs an intense whitening routine. Some people just want a quick appearance boost before a high-visibility moment. That is the clearest case for Purple Magic Whitening Serum.
+              Fast, simple, and confidence-first.
             </p>
 
             <div class="cta-band">
-              <p><strong>Want to instantly neutralise yellow tones?</strong></p>
-              <p>
-                Perfora Purple Magic Whitening Serum is the most natural product recommendation at this point in the article.
-              </p>
-              <a class="cta-link" href="https://perforacare.com/products/purple-magic-whitening-serum">Try Purple Serum</a>
+              <p><strong>Want a brighter-looking smile before the moment that matters?</strong></p>
+              <a class="cta-link" href="https://perforacare.com/products/purple-magic-whitening-serum">Buy Purple Serum</a>
             </div>
           </section>
         </article>
