@@ -174,7 +174,7 @@
       .hero-copy .dek {
         max-width: 100%;
         margin-top: 26px;
-        margin-bottom: 0;
+        margin-bottom: 22px;
         font-size: 1.22rem;
         line-height: 1.65;
       }
@@ -183,6 +183,33 @@
         font-size: clamp(3.5rem, 6vw, 5.9rem);
         line-height: 0.95;
         letter-spacing: -0.05em;
+      }
+
+      .hero-atc {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        flex-wrap: wrap;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .hero-atc a,
+      .inline-atc {
+        display: inline-block;
+        padding: 14px 20px;
+        background: var(--lavender-deep);
+        color: #fff;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        border-radius: 999px;
+      }
+
+      .hero-atc span {
+        font-size: 13px;
+        color: var(--muted);
       }
 
       .split-section {
@@ -277,7 +304,7 @@
       }
 
       .pull-quote small {
-        display: block;
+        display: none;
         font-family: Arial, Helvetica, sans-serif;
         color: var(--muted);
         font-size: 12px;
@@ -512,6 +539,17 @@
           margin-top: 18px;
         }
 
+        .before-after {
+          width: calc(100% + 32px);
+          margin-left: -16px;
+          margin-right: -16px;
+        }
+
+        .before-after img {
+          width: 100%;
+          height: auto;
+        }
+
         .article {
           padding-top: 20px;
         }
@@ -578,10 +616,11 @@
           align-items: center;
           justify-content: space-between;
           gap: 12px;
-          padding: 12px 16px;
+          padding: 12px 16px calc(12px + env(safe-area-inset-bottom, 0px));
           border-top: 1px solid var(--line);
           background: rgba(248, 247, 243, 0.96);
           backdrop-filter: blur(10px);
+          box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.08);
         }
 
         .mobile-atc-copy {
@@ -616,6 +655,16 @@
           letter-spacing: 0.04em;
           text-transform: uppercase;
           border-radius: 999px;
+        }
+
+        .hero-atc {
+          gap: 10px;
+        }
+
+        .hero-atc a,
+        .inline-atc {
+          width: 100%;
+          text-align: center;
         }
       }
     </style>
@@ -661,6 +710,10 @@
               <p class="dek">
                 Coffee, tea, lighting, and natural enamel undertones can all make a smile look duller than it really is. Here is why that happens, and why colour-correction has become a popular quick fix before important moments.
               </p>
+              <div class="hero-atc">
+                <a href="https://perforacare.com/products/purple-magic-whitening-serum">Buy Now</a>
+                <span>Peroxide-free, enamel-safe, instant cosmetic brightening</span>
+              </div>
             </div>
           </div>
 
@@ -675,7 +728,6 @@
             <p>
               “It is rarely your entire smile that bothers you. It is usually one yellow-looking moment, under one unforgiving light, right before something important.”
             </p>
-            <small>Reader concern this category speaks to</small>
           </div>
 
           <hr class="separator" />
@@ -744,7 +796,6 @@
               <p>
                 “Think of it like concealer for a smile: not a forever change, but a fast cosmetic shift in how bright teeth look right now.”
               </p>
-              <small>How the product is best understood</small>
             </div>
           </section>
 
@@ -755,6 +806,7 @@
               <p>
                 Perfora Purple Magic Whitening Serum is positioned as a peroxide-free, enamel-safe formula for daily use. The product page says it can visibly improve the look of teeth from the first use and uses an apple, peach, and mint flavour profile.
               </p>
+              <a class="inline-atc" href="https://perforacare.com/products/purple-magic-whitening-serum">Shop Purple Serum</a>
 
             </div>
 
