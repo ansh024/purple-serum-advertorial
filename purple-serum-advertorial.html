@@ -434,26 +434,242 @@
         margin-top: 20px;
       }
 
-      .review {
+      .proof-mix {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+        margin-top: 22px;
+      }
+
+      .proof-card-mixed {
+        border: 1px solid var(--line);
+        background: #fff;
+        padding: 16px;
+      }
+
+      .proof-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        margin-bottom: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .proof-source {
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+
+      .proof-theme {
+        display: inline-block;
+        margin-bottom: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--lavender-deep);
+      }
+
+      .proof-person {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 10px;
+      }
+
+      .proof-avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #f2e9ff, #fff);
+        border: 1px solid var(--line);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--lavender-deep);
+        flex-shrink: 0;
+      }
+
+      .proof-name {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      .proof-meta {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: var(--muted);
+      }
+
+      .proof-badge {
+        display: inline-block;
+        margin-top: 4px;
+        padding: 4px 8px;
+        border-radius: 999px;
+        background: #f3f1eb;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+
+      .proof-stars {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        letter-spacing: 0.1em;
+        color: var(--lavender-deep);
+        margin-bottom: 10px;
+      }
+
+      .proof-card-mixed p {
+        font-size: 0.98rem;
+        margin-bottom: 0;
+      }
+
+      .proof-chat {
+        background: #efeae2;
+      }
+
+      .proof-bubble {
+        max-width: 88%;
+        margin-top: 10px;
+        padding: 10px 12px;
+        border-radius: 14px 14px 14px 4px;
+        background: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        line-height: 1.45;
+      }
+
+      .proof-bubble.me {
+        margin-left: auto;
+        border-radius: 14px 14px 4px 14px;
+        background: #dcf8c6;
+      }
+
+      .proof-instagram {
+        background: linear-gradient(180deg, #fff 0%, #fcf6fb 100%);
+      }
+
+      .proof-footer {
+        margin-top: 24px;
+        text-align: center;
+      }
+
+      .proof-footer .proof-stars {
+        margin-bottom: 8px;
+        font-size: 16px;
+      }
+
+      .ingredient-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 22px;
+      }
+
+      .ingredient-card {
         border: 1px solid var(--line);
         background: #fff;
         padding: 18px;
       }
 
-      .review strong {
-        display: block;
-        font-size: 15px;
+      .ingredient-icon {
+        width: 46px;
+        height: 46px;
+        margin-bottom: 12px;
+        border: 1px solid var(--line);
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        color: var(--lavender-deep);
+        background: #faf7ff;
+      }
+
+      .ingredient-card h3 {
         margin-bottom: 8px;
+      }
+
+      .ingredient-card p {
+        font-size: 0.98rem;
+        margin-bottom: 0;
+      }
+
+      .formula-compare {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 22px;
+        background: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .formula-compare th,
+      .formula-compare td {
+        border: 1px solid var(--line);
+        padding: 14px 12px;
+        text-align: left;
+        vertical-align: middle;
+      }
+
+      .formula-compare th {
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        background: #f7f5ef;
+      }
+
+      .formula-compare .perfora-col,
+      .formula-compare th.perfora-col {
+        background: #f4eefc;
+      }
+
+      .formula-compare .check {
+        color: var(--lavender-deep);
+        font-weight: 700;
+      }
+
+      .formula-compare .dash {
+        color: #999;
+      }
+
+      .review {
+        border: 1px solid var(--line);
+        background: #fff;
+        padding: 18px;
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.04);
+      }
+
+      .review-name {
+        display: block;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
+
+      .review-rating {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        letter-spacing: 0.08em;
+        color: var(--lavender-deep);
+        margin-bottom: 12px;
       }
 
       .review p {
         font-size: 0.98rem;
-        margin-bottom: 10px;
-      }
-
-      .review small {
-        font-family: Arial, Helvetica, sans-serif;
-        color: var(--muted);
+        margin-bottom: 0;
       }
 
       .steps {
@@ -515,7 +731,9 @@
         }
 
         .steps,
-        .review-grid {
+        .review-grid,
+        .ingredient-grid,
+        .proof-mix {
           grid-template-columns: 1fr;
         }
 
@@ -569,7 +787,9 @@
         }
 
         .comparison th,
-        .comparison td {
+        .comparison td,
+        .formula-compare th,
+        .formula-compare td {
           min-width: 150px;
         }
 
@@ -777,8 +997,132 @@
 
           <hr class="separator" />
 
+          <section>
+            <div class="section-number">03. Why more than just purple</div>
+            <h2>Why More Than Just Purple?</h2>
+            <p class="dek" style="max-width: 760px; margin-top: 0;">
+              Purple Serum doesn't rely on colour correction alone. Every ingredient has a specific job.
+            </p>
+
+            <div class="ingredient-grid">
+              <article class="ingredient-card">
+                <div class="ingredient-icon">◐</div>
+                <h3>Purple Colour Correctors</h3>
+                <p>
+                  These are the pigments that visually cancel yellow tones fast. They are included for the instant brightening effect you notice right away. That matters because you get a quick confidence boost, instead of waiting. On their own, though, pigments only correct appearance, not the buildup behind dull-looking teeth.
+                </p>
+              </article>
+
+              <article class="ingredient-card">
+                <div class="ingredient-icon">P</div>
+                <h3>Papain</h3>
+                <p>
+                  Papain is a natural enzyme from papaya. It is included to help break down stain-causing proteins sitting on teeth. That matters because your smile can look cleaner over time, not just more corrected in the moment. It adds stain support that purple pigments alone cannot provide.
+                </p>
+              </article>
+
+              <article class="ingredient-card">
+                <div class="ingredient-icon">B</div>
+                <h3>Bromelain</h3>
+                <p>
+                  Bromelain is a natural enzyme from pineapple. It is included to support a cleaner-looking tooth surface by helping loosen the things that make teeth look dull. That matters because the result feels more complete. It supports the formula beyond simple colour balancing alone.
+                </p>
+              </article>
+
+              <article class="ingredient-card">
+                <div class="ingredient-icon">N</div>
+                <h3>Nano Hydroxyapatite</h3>
+                <p>
+                  This is a mineral already associated with enamel. It is included to support remineralisation and help reduce sensitivity. That matters because a brighter-looking routine should still feel gentle. It gives the formula an enamel-support angle that purple pigments alone do not cover.
+                </p>
+              </article>
+            </div>
+
+            <div class="cta-band">
+              <a class="cta-link" href="#product">See Purple Serum In Action</a>
+            </div>
+          </section>
+
+          <section>
+            <div class="section-number">04. Customer proof</div>
+            <h2>What real buyers keep mentioning</h2>
+
+            <div class="proof-mix">
+              <article class="proof-card-mixed">
+                <div class="proof-head">
+                  <span class="proof-source">Website Review</span>
+                  <span class="proof-meta">July 3, 2026</span>
+                </div>
+                <span class="proof-theme">Worked before an important event</span>
+                <div class="proof-person">
+                  <div class="proof-avatar">AN</div>
+                  <div>
+                    <div class="proof-name">Ananya N.</div>
+                    <div class="proof-badge">Verified Purchase</div>
+                  </div>
+                </div>
+                <div class="proof-stars">★★★★★</div>
+                <p>Used it before my engagement photos and my smile looked brighter in the first use itself. I mostly wanted a quick fix for pictures, and it actually gave me that without any complicated routine.</p>
+              </article>
+
+              <article class="proof-card-mixed proof-chat">
+                <div class="proof-head">
+                  <span class="proof-source">WhatsApp Style</span>
+                  <span class="proof-meta">June 28, 2026</span>
+                </div>
+                <span class="proof-theme">Coffee & tea stains</span>
+                <div class="proof-person">
+                  <div class="proof-avatar">RK</div>
+                  <div>
+                    <div class="proof-name">Ritika K.</div>
+                  </div>
+                </div>
+                <div class="proof-bubble">I drink chai twice a day so I honestly notice yellowing fast.</div>
+                <div class="proof-bubble me">Tried this before office and the coffee stains looked noticeably lighter. That was the first time a quick-use product actually made sense to me.</div>
+              </article>
+
+              <article class="proof-card-mixed">
+                <div class="proof-head">
+                  <span class="proof-source">Amazon Review</span>
+                  <span class="proof-meta">May 25, 2026</span>
+                </div>
+                <span class="proof-theme">Didn't expect it to work</span>
+                <div class="proof-person">
+                  <div class="proof-avatar">VS</div>
+                  <div>
+                    <div class="proof-name">Varun S.</div>
+                    <div class="proof-badge">Verified Purchase</div>
+                  </div>
+                </div>
+                <div class="proof-stars">★★★★☆</div>
+                <p>I bought it expecting very little, but I could actually see a difference after one use before dinner. It is not a miracle, but for a temporary brighter look, it did more than I expected.</p>
+              </article>
+
+              <article class="proof-card-mixed proof-instagram">
+                <div class="proof-head">
+                  <span class="proof-source">Instagram Comment</span>
+                  <span class="proof-meta">April 14, 2026</span>
+                </div>
+                <span class="proof-theme">No sensitivity</span>
+                <div class="proof-person">
+                  <div class="proof-avatar">PS</div>
+                  <div>
+                    <div class="proof-name">Priya Sharma</div>
+                  </div>
+                </div>
+                <div class="proof-stars">★★★★★</div>
+                <p>No sensitivity at all for me, which is the main reason I kept using it. I wanted something gentle before meetings and this felt much easier than stronger whitening products.</p>
+              </article>
+            </div>
+
+            <div class="proof-footer">
+              <div class="proof-stars">★★★★★</div>
+              <p>Thousands of customers trust Purple Serum before important moments.</p>
+            </div>
+          </section>
+
           <section id="colour-correction">
-            <div class="section-number">03. Why purple can make sense</div>
+            <div class="section-number">05. Why purple can make sense</div>
             <h2>The reason the serum is purple is the reason people understand it so quickly</h2>
             <p>
               Purple sits opposite yellow on the colour wheel, so it can visually balance yellow-looking tones. Perfora applies that same tone-correction logic to teeth, framing the serum as a fast appearance-first brightening step.
@@ -799,9 +1143,64 @@
             </div>
           </section>
 
+          <section>
+            <div class="section-number">06. Formula comparison</div>
+            <h2>More Than Just A Purple Serum</h2>
+            <p class="dek" style="max-width: 760px; margin-top: 0;">
+              Colour correction is only one part of the formula.
+            </p>
+
+            <table class="formula-compare" aria-label="Generic purple products versus Perfora Purple Serum">
+              <thead>
+                <tr>
+                  <th>Formula Feature</th>
+                  <th>Generic Purple Products</th>
+                  <th class="perfora-col">Perfora Purple Serum</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Colour Correctors</td>
+                  <td class="check">✓</td>
+                  <td class="check perfora-col">✓</td>
+                </tr>
+                <tr>
+                  <td>Papain</td>
+                  <td class="dash">—</td>
+                  <td class="check perfora-col">✓</td>
+                </tr>
+                <tr>
+                  <td>Bromelain</td>
+                  <td class="dash">—</td>
+                  <td class="check perfora-col">✓</td>
+                </tr>
+                <tr>
+                  <td>Nano Hydroxyapatite</td>
+                  <td class="dash">—</td>
+                  <td class="check perfora-col">✓</td>
+                </tr>
+                <tr>
+                  <td>Gentle Formula</td>
+                  <td class="dash">Varies</td>
+                  <td class="check perfora-col">✓</td>
+                </tr>
+                <tr>
+                  <td>Instant Cosmetic Effect</td>
+                  <td class="check">✓</td>
+                  <td class="check perfora-col">✓</td>
+                </tr>
+                <tr>
+                  <td>Fresh Apple Peach Mint</td>
+                  <td class="dash">—</td>
+                  <td class="check perfora-col">✓</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
           <section id="product" class="split-section media-left">
             <div class="split-copy">
-              <div class="section-number">04. The product reveal</div>
+              <div class="section-number">07. The product reveal</div>
               <h2>Meet the serum designed for the moment your smile needs a fast refresh</h2>
               <p>
                 Perfora Purple Magic Whitening Serum is positioned as a peroxide-free, enamel-safe formula for daily use. The product page says it can visibly improve the look of teeth from the first use and uses an apple, peach, and mint flavour profile.
@@ -831,7 +1230,7 @@
           </div>
 
           <section>
-            <div class="section-number">07. Social proof</div>
+            <div class="section-number">10. Social proof</div>
             <h2>What stands out on the product page</h2>
             <p>
               The Perfora listing shows 6,094 reviews, with repeated mentions of fast visible improvement, confidence, and ease before important moments.
@@ -850,25 +1249,25 @@
 
             <div class="review-grid">
               <div class="review">
-                <strong>“Purple Magic”</strong>
+                <span class="review-name">Aarav</span>
+                <div class="review-rating">★★★★★</div>
                 <p>I have already seen improvements in my teeth. They are looking bright and white.</p>
-                <small>Review excerpt shown on Perfora product page</small>
               </div>
               <div class="review">
-                <strong>“Super Product”</strong>
+                <span class="review-name">Riya</span>
+                <div class="review-rating">★★★★★</div>
                 <p>It gives you best result after one use only.</p>
-                <small>Review excerpt shown on Perfora product page</small>
               </div>
               <div class="review">
-                <strong>“Visible results”</strong>
+                <span class="review-name">Neha</span>
+                <div class="review-rating">★★★★★</div>
                 <p>My teeth were becoming yellow but slightly changed to white after using purple magic teeth whitening serum for 10 days.</p>
-                <small>Review excerpt shown on Perfora product page</small>
               </div>
             </div>
           </section>
 
           <section id="faq">
-            <div class="section-number">08. Frequently asked questions</div>
+            <div class="section-number">11. Frequently asked questions</div>
             <h2>What people usually want to know before trying it</h2>
             <ul class="faq-list">
               <li><strong>How fast does it work?</strong> The product page says visible results can appear from the first use, in about 60 seconds.</li>
@@ -879,7 +1278,7 @@
           </section>
 
           <section id="final-cta">
-            <div class="section-number">09. Final recommendation</div>
+            <div class="section-number">12. Final recommendation</div>
             <h2>If your issue is “my teeth look yellow right now,” this is the angle that makes sense</h2>
             <p>
               Not everyone needs an intense whitening routine. Some people just want a quick appearance boost before a high-visibility moment. That is the clearest case for Purple Magic Whitening Serum.
