@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/purple-serum-advertorial.html"
+    }
+  ]
+}
